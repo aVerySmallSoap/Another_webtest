@@ -1,0 +1,96 @@
+html{
+    height: 100%;
+    background-color: var(--utility-color);
+}
+
+body{
+    margin: 0;
+}
+
+#container{
+    border-radius: 50px;
+    margin: 40svh 60svh 0 60svh;
+    background-color: white;
+}
+
+.title-container{
+    text-align: center;
+    background-color: var(--secondary-accent);
+    border-radius: 50px;
+}
+
+.title{
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+#title-style-layer{
+    padding: 25px;
+}
+
+#inner-container{
+    text-align: center;
+}
+
+#main-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 25px 25px 0 0;
+}
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-row label{
+    flex-basis: 100%;
+    margin-left: 9.8svw;
+    padding: 6px;
+    font-weight: bolder;
+}
+
+.form-row input{
+    flex-shrink: 1;
+    border-radius: 10px;
+    border: 2px solid rgb(0,0,0,25%);
+    outline: none;
+    padding: 5px;
+    margin: 5px 5px 5px 9.5svw;
+}
+
+.form-row .badge{
+    border-radius: 100px;
+    height: 22px;
+    width: 22px;
+    margin-top: 8px;
+    background-color: crimson;
+    visibility: hidden;
+}
+
+.badge .badge-danger{
+    position: relative;
+    text-align: center;
+    top: -2px;
+    left: 9px;
+    color: white;
+}
+
+.form-row ~ .btn-row{
+    padding: 10px;
+}
+
+.btn-verify{
+    background-color: limegreen;
+    padding: 10px;
+}
+
+.btn-cancel{
+    background-color: maroon;
+    padding: 10px;
+}

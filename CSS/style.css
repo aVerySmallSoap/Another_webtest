@@ -10,68 +10,25 @@
     src: url("../misc/Fonts/Poppins.ttf");
 }
 
-html{
-    background-image: url("../misc/Images/bg-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
-}
-
-html::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
+.toast{
+    position: fixed;
     top: 0;
-    backdrop-filter: blur(8px);
-    z-index: -1;
-}
-
-@keyframes bottom-top {
-    0%{
-        margin-top: 80svh;
-        opacity: 0;
-    }
-    100%{
-        margin-top: 45svh;
-        opacity: 1;
-    }
-}
-
-@keyframes bottom-top-follow {
-    0%{
-        margin-top: 10svh;
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.container{
-    animation: ease-out "bottom-top" 5s;
-    text-align: center;
-    margin: 45svh 50svh 0 50svh;
-    border: 3px solid rgb(255, 255, 255, 75%);
+    right: 0;
+    border: 1px solid black;
+    border-radius: 10px;
     padding: 5px;
-    height: 100px;
+    visibility: hidden;
 }
 
-.inner-container{
-    animation: ease-in "bottom-top-follow" 5s;
+.toast-inner{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
-    flex-wrap: wrap;
 }
 
-#card-title{
-    text-align: center;
-    flex-basis: 100%;
-    font-family: "Poppins", sans-serif;
-    font-size: 24px;
+.toast-icon{
+}
+
+.toast-message{
+    flex-grow: 1;
 }
 
 .btn{
@@ -80,12 +37,4 @@ html::after{
     margin: 0 10px 0 10px;
     padding: 5px;
     font-family: "Poppins", sans-serif;
-}
-
-.condition{
-    background-color: var(--primary-accent);
-}
-
-.loops{
-    background-color: var(--secondary-accent);
 }
